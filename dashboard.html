@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - A&R Discovery Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🎵</span>
+                <span class="brand-name">A&R Discovery</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!-- Dashboard Content -->
+<div class="page-container">
+    <div class="page-header">
+        <h1>Dashboard Overview</h1>
+        <p>Real-time insights into trending artists and growth metrics</p>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-info">
+                <h3>Total Artists</h3>
+                <p id="total-artists">-</p>
+            </div>
+            <div class="stat-icon">👥</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-info">
+                <h3>Viral Artists</h3>
+                <p id="viral-artists">-</p>
+            </div>
+            <div class="stat-icon">⚡</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-info">
+                <h3>Rising Stars</h3>
+                <p id="rising-artists">-</p>
+            </div>
+            <div class="stat-icon">📈</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-info">
+                <h3>Avg Growth</h3>
+                <p id="avg-growth">-</p>
+            </div>
+            <div class="stat-icon">🏆</div>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+        <div class="filters-grid">
+            <div class="filter-group">
+                <span class="filter-icon">🔍</span>
+                <input type="text" id="search" placeholder="Search artists or genre...">
+            </div>
+            <div class="filter-group">
+                <span class="filter-icon">🎯</span>
+                <select id="platform-filter">
+                    <option value="all">All Platforms</option>
+                    <option value="spotify">Spotify Hot</option>
+                    <option value="tiktok">TikTok Trending</option>
+                    <option value="youtube">YouTube Rising</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <span class="filter-icon">📊</span>
+                <select id="sort-by">
+                    <option value="overall">Overall Score</option>
+                    <option value="spotify">Spotify Growth</option>
+                    <option value="tiktok">TikTok Growth</option>
+                    <option value="youtube">YouTube Growth</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Artists Grid -->
+    <div class="artists-grid" id="artists-container">
+        <!-- Loading state by default -->
+        <div class="loading-placeholder">Loading artists...</div>
+    </div>
+
+    <!-- Footer Note -->
+    <div class="data-note">
+        <p>Data refreshed every 24 hours • Growth calculated over last 30 days</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="brand-icon">🎵</span>
+                <span>A&R Discovery Tool</span>
+            </div>
+            <p>&copy; 2024 A&R Discovery. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

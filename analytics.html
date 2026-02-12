@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - A&R Discovery Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🎵</span>
+                <span class="brand-name">A&R Discovery</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="analytics.html" class="active">Analytics</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!-- Analytics Content -->
+<div class="page-container">
+    <div class="page-header">
+        <h1>Platform Analytics</h1>
+        <p>Insights and trends across our artist database</p>
+    </div>
+
+    <!-- Analytics Grid -->
+    <div class="analytics-grid">
+        <!-- Top Genres -->
+        <div class="analytics-card">
+            <h3>Top Genres by Growth</h3>
+            <div id="genres-container" class="chart-placeholder">
+                <div class="loading-placeholder">Loading genre data...</div>
+            </div>
+        </div>
+
+        <!-- Regional Breakdown -->
+        <div class="analytics-card">
+            <h3>Artists by Region</h3>
+            <div id="regions-container" class="chart-placeholder">
+                <div class="loading-placeholder">Loading regional data...</div>
+            </div>
+        </div>
+
+        <!-- Platform Performance -->
+        <div class="analytics-card full-width">
+            <h3>Average Growth by Platform</h3>
+            <div id="platform-stats-container" class="platform-stats">
+                <div class="loading-placeholder">Loading platform stats...</div>
+            </div>
+        </div>
+
+        <!-- Trending Now -->
+        <div class="analytics-card full-width">
+            <h3>🔥 Trending This Week</h3>
+            <div id="trending-container" class="trending-list">
+                <div class="loading-placeholder">Loading trending artists...</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="brand-icon">🎵</span>
+                <span>A&R Discovery Tool</span>
+            </div>
+            <p>&copy; 2024 A&R Discovery. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="analytics.js"></script>
+
+
+</body>
+</html>

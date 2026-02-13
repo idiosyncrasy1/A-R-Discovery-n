@@ -348,7 +348,7 @@ For questions or issues:
 
 ## 📄 License
 
-© 2024 A&R Discovery. All rights reserved.
+© 2025 A&R Discovery. All rights reserved.
 
 -----
 
